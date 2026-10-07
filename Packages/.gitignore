@@ -1,0 +1,7 @@
+/*/
+!com.vrchat.core.*
+!com.vrchat.core.*/**
+
+# Keep the Eden Consent Badge in this repository.
+!com.theedenapis.consentbadge/
+!com.theedenapis.consentbadge/**

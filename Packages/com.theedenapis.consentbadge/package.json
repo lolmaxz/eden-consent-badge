@@ -1,0 +1,20 @@
+{
+  "name": "com.theedenapis.consentbadge",
+  "displayName": "Eden Consent Badge",
+  "version": "2.0.0",
+  "unity": "2022.3",
+  "description": "Eden Consent Badge version 2, by The Eden Apis.",
+  "author": {
+    "name": "The Eden Apis",
+    "email": "lolmaxz@theedenapis.com",
+    "url": "https://theedenapis.com"
+  },
+  "vpmDependencies": {
+    "com.vrchat.avatars": "3.10.x",
+    "com.vrcfury.vrcfury": ">=1.1431.0"
+  },
+  "legacyFolders": {
+    "Assets\\EdenBadge": "f8ff1767175506f41b568259057d80a3",
+    "Assets\\EdenBadgeV2": "ea5cbe140f4c0bd18b4f6ea15e0af556"
+  }
+}

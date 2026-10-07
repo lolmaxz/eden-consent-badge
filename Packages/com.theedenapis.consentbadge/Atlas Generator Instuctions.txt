@@ -1,0 +1,35 @@
+An atlas is a single large image that combines multiple smaller textures into one layout.
+
+Eden Badge V2 uses one atlas instead of four separate images for the picture on the badge. The four hearts are Eden, Hephia, Custom 1, and Custom 2.
+
+For ease of use Rekka has created a script to help generate these atlases!
+
+WARNING: Generate Atlas overwrites Textures/Atlas and Textures/Mask. You will be asked to confirm before it writes. Back those textures up if you want to keep them. A custom heart you did not replace is left as it is.
+
+In Unity, go to Tools > Eden > Atlas Generator.
+
+The window opens on Overview and shows the atlas already saved on the badge, all four hearts together.
+
+Eden and Hephia are locked. They are part of the badge setup and cannot be changed from this window.
+
+Custom 1 and Custom 2 are the ones you can edit. Those are the same Custom 1 and Custom 2 in the badge menu. Open that tab to work on one heart. You will see that heart's colour and its mask, with the heart frame drawn on top. The frame is only a guide. It is not saved into the atlas.
+
+Put your images somewhere in your assets folder. For best results use an image with a single color background, like a green screen. Drag an image from the Project window into the Texture slot.
+
+Scale changes how large the image sits in the heart. 1 fits the longest side. Lower shrinks it. Higher zooms in and crops the edges.
+
+Sample Background reads the colour from the corners and uses it as the empty background.
+
+The mask decides which pixels are the logo and which are background.
+Flood Fill is the default. It works like a paint bucket from the corners, and it keeps holes inside the logo.
+Color Key removes every pixel close to the background colour, including holes inside the picture.
+Tolerance is how close a colour has to be before it is removed. 0 is an exact match.
+Remove Background paints those removed pixels black in the colour image. The badge still uses the mask to cut the logo out and to light it.
+
+Hover a slider or button if you want a short reminder of what it does.
+
+When the texture and the mask for that heart look right, click Generate Atlas and confirm the overwrite.
+
+Clear drops the image from that heart. The saved logo stays until you generate. Generating after a clear leaves that heart empty.
+
+The tool remembers the images and settings you last used. Unity keeps that record in Assets/EdenApis/EdenBadge/Settings.json, outside the badge folder, so updating the badge does not replace it. After an update, Unity rebuilds the colour atlas and the mask from that record, so Custom 1 and Custom 2 come back on the badge. Opening Atlas Generator also brings those hearts back as you left them.

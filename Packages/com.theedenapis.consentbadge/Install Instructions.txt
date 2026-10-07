@@ -1,0 +1,38 @@
+Eden Consent Badge
+
+Version 2 is out. This is the Eden Consent Badge from The Eden Apis.
+It is also available at https://theedenapis.com/badge
+
+The badge uses VRCFury. If Creator Companion does not already have VRCFury, add that repository first.
+https://vrcfury.com/
+
+In the Project window, open Packages, then Eden Consent Badge. The folder name in the path is com.theedenapis.consentbadge. The three prefabs are in that folder, and all three work on Quest and PC.
+
+Universal Eden Badge has bones so you can add physics with a physbone or use a rotation constraint.
+(Boneless) Universal Eden Badge has no bones, use this for a static badge that won't move.
+(2-Sided) Universal Eden Badge is visible from front and back and has a metal band around the outside, use this for something like an ear ring which can be seen from behind. It also has bones.
+
+To put one on an avatar, open the avatar scene or the avatar prefab, then go to Tools > Eden > Add Badge. The window uses the avatar you have selected. Choose a badge and a bone, then press Add to avatar. The badge is placed on that bone and selected in the scene.
+
+You can also drag one of those prefabs onto a bone in the avatar's armature, or onto the avatar root and add a VRCFury Armature Link for the bone it should follow.
+
+Upgrading from Eden Badge 1.0
+
+If an avatar still has the old badge, open that avatar's scene, or open the avatar prefab, then go to Tools > Eden > Upgrade V1 Badge.
+
+The window finds the old badge from its EdenHeart mesh, even if the object was renamed. It selects every match it finds. Choose which of the three V2 prefabs you want. Universal Eden Badge is the usual choice. Then press Upgrade selected.
+
+Position and scale are copied from the old badge. The new heart is turned so it keeps facing the same way. You can undo the swap.
+
+If a badge was not parented to an avatar bone, the window warns you. The badge is still replaced, but it will not move with the avatar until you add a VRCFury Armature Link on it and choose the bone it should follow.
+
+Custom pictures
+
+The badge shows four pictures: Eden, Hephia, Custom 1, and Custom 2. Eden and Hephia are fixed. To change Custom 1 or Custom 2, check out the Atlas Generator instructions. The choices you make there are saved in Assets/EdenApis/EdenBadge/Settings.json, which stays in your project when the badge is updated. After an update, Unity rebuilds the badge pictures from that file.
+
+
+Credit:
+Krenki
+Verde
+Maxie
+Rekka

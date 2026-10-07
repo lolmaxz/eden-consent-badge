@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: EdenBadge - MenuMain
+  m_EditorClassIdentifier: 
+  Parameters: {fileID: 11400000, guid: 3c411641b645cae04986ad91820e1ca7, type: 2}
+  controls:
+  - name: No Touch
+    icon: {fileID: 2800000, guid: cb20f2c81a920560f8fb8ca983ca393f, type: 3}
+    type: 102
+    parameter:
+      name: EdenBadge/Color/Red
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Ask First
+    icon: {fileID: 2800000, guid: b6894c3ebf54a15a6ac05219bd3e5a2c, type: 3}
+    type: 102
+    parameter:
+      name: EdenBadge/Color/Yellow
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Wholesome Touch
+    icon: {fileID: 2800000, guid: 4e437bd01b1d518e8a61eb4c77690675, type: 3}
+    type: 102
+    parameter:
+      name: EdenBadge/Color/Green
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Lewd Touch
+    icon: {fileID: 2800000, guid: 6bb2cd67043ad58068d6de74d9d31aa9, type: 3}
+    type: 102
+    parameter:
+      name: EdenBadge/Color/Blue
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Alt Textures
+    icon: {fileID: 2800000, guid: 0a1c5752936acaeb295975672a4f26e0, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: dfb7f222d42996c2888be610becb02ee, type: 2}
+    subParameters: []
+    labels: []
+  - name: Particles
+    icon: {fileID: 2800000, guid: 632fc62e8ddd50208a928a4236668a8a, type: 3}
+    type: 102
+    parameter:
+      name: EdenBadge/Heart/Particles
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: AudioLink
+    icon: {fileID: 2800000, guid: 93659a752dee2735b95b756418de52f6, type: 3}
+    type: 102
+    parameter:
+      name: EdenBadge/Heart/AudioLink
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
