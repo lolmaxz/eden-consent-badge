@@ -1,40 +1,34 @@
 # Eden Consent Badge
 
-Version 2 of the Eden Consent Badge, published by The Eden Apis.
+Consent heart for VRChat avatars, by The Eden Apis.
 
-People install it from [theedenapis.com/badge](https://theedenapis.com/badge). Creator Companion reads the package listing that this repository publishes with GitHub Pages.
+The full tutorial, with pictures, is at https://theedenapis.com/badge
 
-The badge itself is `Packages/com.theedenapis.consentbadge`. Version `2.0.1` in `package.json` matches the version stored by the badge settings script.
+It needs VRCFury 1.1431.0 or newer, and the VRChat Avatars SDK 3.10. Add VRCFury in Creator Companion first if the project does not already have it. https://vrcfury.com/
 
-## Create the GitHub repository
+Creator Companion has to be 2.1.0 or newer for a community repository. The version is in the top-right of the app.
 
-Create an empty public repository named `eden-consent-badge` on the `lolmaxz` account. Do not add a README there. From this folder:
+## Creator Companion
 
-```powershell
-git add .
-git commit -m "Add the Eden Consent Badge 2.0.0 package."
-git remote add origin git@github.com:lolmaxz/eden-consent-badge.git
-git push -u origin main
-```
+1. Open https://theedenapis.com/badge and press Add to Creator Companion. In the popup, press I Understand, Add Repository.
+2. If that button does nothing, open Creator Companion, go to Settings, Packages, Add Repository, and paste this address:
 
-If the repository name is different, use that name in the remote, then change `listingUrl` in the website file `src/lib/pages/Badge.svelte` and the `/badge/index.json` rewrite in `vercel.json`.
+   https://lolmaxz.github.io/eden-consent-badge/index.json
 
-## Let GitHub publish releases
+3. Open the avatar project you already use, or create one.
+4. In the package list, find Eden Consent Badge and add the newest version.
+5. Open the project in Unity and let it finish importing.
 
-In the GitHub repository:
+In Unity, use Tools > Eden. Add Badge puts it on an avatar. Upgrade V1 Badge swaps an old Eden badge. Atlas Generator is for Custom 1 and Custom 2.
 
-1. Settings, Secrets and variables, Actions, Variables. Add a repository variable named `PACKAGE_NAME` with the value `com.theedenapis.consentbadge`.
-2. Settings, Pages. Set Build and deployment to GitHub Actions.
-3. Actions, Build Release, Run workflow.
+## Manual install
 
-That creates a release for the version in `package.json` (currently `2.0.1`) and publishes the listing at:
+Use this only if you want the files in the project by hand. Each update is another download. Creator Companion is the easier way to pick up later versions.
 
-https://lolmaxz.github.io/eden-consent-badge/index.json
+1. Download the `.unitypackage` from https://github.com/lolmaxz/eden-consent-badge/releases/latest
+2. Drag it into Unity's Project window and import every file.
+3. Wait until Unity finishes importing, then use Tools > Eden > Add Badge.
 
-Leave old releases in place. Deleting one breaks projects that are still on that version.
+Do not import that file into a project that already has Eden Consent Badge from Creator Companion. If you switch to Creator Companion later, remove the manual copy first.
 
-## What stays out of the package
-
-`Assets/EdenApis` is the user's settings folder. It is created in their project and is not part of this package, so an update does not replace it.
-
-The first Creator Companion install removes an older copy found at `Assets/EdenBadge` or `Assets/EdenBadgeV2`.
+Krenki, Verde, Maxie, and Rekka.
