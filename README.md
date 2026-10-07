@@ -4,7 +4,7 @@ Version 2 of the Eden Consent Badge, published by The Eden Apis.
 
 People install it from [theedenapis.com/badge](https://theedenapis.com/badge). Creator Companion reads the package listing that this repository publishes with GitHub Pages.
 
-The badge itself is `Packages/com.theedenapis.consentbadge`. Version `2.0.0` in `package.json` matches the version stored by the badge settings script.
+The badge itself is `Packages/com.theedenapis.consentbadge`. Version `2.0.1` in `package.json` matches the version stored by the badge settings script.
 
 ## Create the GitHub repository
 
@@ -27,7 +27,7 @@ In the GitHub repository:
 2. Settings, Pages. Set Build and deployment to GitHub Actions.
 3. Actions, Build Release, Run workflow.
 
-That creates the `2.0.0` release and publishes the listing at:
+That creates a release for the version in `package.json` (currently `2.0.1`) and publishes the listing at:
 
 https://lolmaxz.github.io/eden-consent-badge/index.json
 

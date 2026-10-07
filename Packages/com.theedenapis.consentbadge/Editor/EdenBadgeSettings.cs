@@ -8,7 +8,7 @@ namespace EdenApis
     [InitializeOnLoad]
     internal static class EdenBadgeSettings
     {
-        internal const string BadgeVersion = "2.0.0";
+        internal const string BadgeVersion = "2.0.1";
         internal const int SettingsVersion = 1;
         internal const string AssetPath = "Assets/EdenApis/EdenBadge/Settings.json";
 
