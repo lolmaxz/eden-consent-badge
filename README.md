@@ -1,6 +1,6 @@
 # Eden Consent Badge
 
-Consent heart for VRChat avatars, by The Eden Apis.
+A heart-shaped badge for consent on VRChat avatars, by The Eden Apis.
 
 The full tutorial, with pictures, is at https://theedenapis.com/badge
 
